@@ -16,12 +16,12 @@ configuration:
     # general settings
     template_work:
         type: template
-        fields: context, version, *
+        fields: context, *
         description: A reference to a template which locates a work file on disk.
 
     template_snapshot:
         type: template
-        fields: context, version, *
+        fields: context, *
         description: A reference to a template which defines the location where snapshot
                      backups will be stored on disk.
 

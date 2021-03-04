@@ -123,14 +123,14 @@ class SnapshotListView(browser_widget.BrowserWidget):
 
                 # build and set details text:
                 lines = []
-                line = "Version v%03d" % details["version"]
-                increment = details.get("increment")
-                if increment:
-                    line += "/%03d" % increment
+                # line = "Version v%03d" % details["version"]
+                # increment = details.get("increment")
+                # if increment:
+                #     line += "/%03d" % increment
                 date = details.get("datetime")
                 if date:
                     tm = date.time()
-                    line += " at %s" % tm.strftime("%H:%M")
+                    line = "Snapshot at %s" % tm.strftime("%H:%M")
                 lines.append("<b>%s</b>" % line)
 
                 user = details.get("user")
